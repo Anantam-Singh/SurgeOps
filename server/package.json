@@ -1,0 +1,36 @@
+{
+  "name": "surge-demand-backend",
+  "version": "1.0.0",
+  "description": "SurgeOps backend — surge demand detection, ML demand forecasting, and AI-explained inventory transfer recommendations",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/scripts/seed.js",
+    "seed:reset": "node src/scripts/seed.js --reset",
+    "backfill-baseline": "node src/scripts/backfill_baseline.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "ml-random-forest": "^2.1.0",
+    "mongoose": "^9.7.3",
+    "morgan": "^1.11.0",
+    "node-cron": "^4.6.0",
+    "passport": "^0.7.0",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
