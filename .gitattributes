@@ -1,0 +1,5 @@
+# Never apply text/CRLF conversion to binary files — it corrupts them.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.ico binary
